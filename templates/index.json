@@ -1,0 +1,804 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/TLS_DESKTOP_BANNER_-_WEBSITE_BANNER_-_5_STARS.jpg",
+            "image_mobile": "shopify://shop_images/TLS_MOBILE_BANNER.jpg",
+            "url": "",
+            "overlay_position": "justify-center items-center",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "/",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "/",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_lines",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 3,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo-media-0": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 2,
+            "rows": 2,
+            "line1_text": "Save up to",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "50%",
+            "line2_text_type_scale": "text-h0",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": true,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Subheading with more info",
+            "link_text": "Add link text here",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 30
+          }
+        },
+        "promo-media-1": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "Save",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "50%",
+            "line2_text_type_scale": "text-h2",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Subheading",
+            "link_text": "Add link text here",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 30
+          }
+        },
+        "promo-media-2": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "Now",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "$50",
+            "line2_text_type_scale": "text-h2",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Subheading",
+            "link_text": "Add link text here",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 30
+          }
+        },
+        "promo-media-3": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 2,
+            "rows": 1,
+            "line1_text": "Save",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "1/3",
+            "line2_text_type_scale": "text-h1",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Subheading with more info",
+            "link_text": "Add link text here",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "promo-media-0",
+        "promo-media-1",
+        "promo-media-2",
+        "promo-media-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Promo grid",
+        "heading_align": "text-start",
+        "button_label": "View All",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 200,
+        "fixed_height_mobile": 280,
+        "text_overlay_font": "body",
+        "color_scheme": "default"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "/",
+        "button_label": "Optional Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "scrolling_cta_slider_QNByj9": {
+      "type": "scrolling_cta_slider",
+      "blocks": {
+        "text_QrhEzD": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Same Day Delivery (Sydney Metro) </strong>",
+            "enable_icon": true,
+            "icon": "truck",
+            "icon_size": 64,
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        },
+        "text_mtkpV7": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Express Shipping Australia Wide</strong>",
+            "enable_icon": true,
+            "icon": "box",
+            "icon_size": 64,
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        },
+        "text_jN88cV": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>★★★★★ 60,000+ Happy Customers!</strong>",
+            "enable_icon": true,
+            "icon": "award",
+            "icon_size": 64,
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "text_QrhEzD",
+        "text_mtkpV7",
+        "text_jN88cV"
+      ],
+      "name": "Scrolling banner cta",
+      "settings": {
+        "scrolling_banner_font_size": 14,
+        "destop_show": true,
+        "section_height": "medium",
+        "spacing": 40,
+        "speed": 24,
+        "direction": "normal",
+        "pausable": true,
+        "color_scheme": "3",
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "icons_with_text_E86zUd": {
+      "type": "icons-with-text",
+      "blocks": {
+        "item_GFBPYc": {
+          "type": "item",
+          "settings": {
+            "icon": "check_mark_in_circle",
+            "heading": "Real Time Stock Levels",
+            "text": "<p>Every product page will show live stock availability </p>",
+            "link": ""
+          }
+        },
+        "item_JzXtCg": {
+          "type": "item",
+          "settings": {
+            "icon": "price_tag",
+            "heading": "Trade Pricing",
+            "text": "<p>Monthly trade specials direct to your inbox for verified trade customers</p>",
+            "link": ""
+          }
+        },
+        "item_FPwY3n": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "heading": "Fast Delivery with Live Tracking",
+            "text": "<p>Sydney Metro: Same Day Delivery<br/>Australia Wide: Express Shipping</p>",
+            "link": ""
+          }
+        },
+        "item_Wa7CeB": {
+          "type": "item",
+          "settings": {
+            "icon": "map_pin",
+            "heading": "Sydney Shop & Warehouse",
+            "text": "<p>47 Carlotta St, Artarmon</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_GFBPYc",
+        "item_JzXtCg",
+        "item_FPwY3n",
+        "item_Wa7CeB"
+      ],
+      "name": "Icons with text",
+      "settings": {
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 48,
+        "title_type_scale": "medium",
+        "text_type_scale": "medium",
+        "icon_position": "beside",
+        "mobile_stack": false,
+        "section_height": "medium",
+        "color_scheme": "1",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "product-features": {
+      "type": "product-features",
+      "blocks": {
+        "feature-0": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.</p>",
+            "content_align": "text-start",
+            "hotspot_x": 28,
+            "hotspot_y": 38
+          }
+        },
+        "feature-1": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.</p>",
+            "content_align": "text-start",
+            "hotspot_x": 60,
+            "hotspot_y": 23
+          }
+        },
+        "feature-2": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.</p>",
+            "content_align": "text-start",
+            "hotspot_x": 73,
+            "hotspot_y": 54
+          }
+        }
+      },
+      "block_order": [
+        "feature-0",
+        "feature-1",
+        "feature-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "show_content": true,
+        "layout": "text_first",
+        "text_align": "text-center",
+        "mob_center_text": false,
+        "heading_size": "h1",
+        "enlarge_text": false,
+        "title": "Product features",
+        "description": "<p>Use this section to highlight specific product features to your customers.</p>",
+        "button_label": "",
+        "button_link": "",
+        "hotspot_color": "#070707",
+        "color_scheme": "none",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "media-with-text": {
+      "type": "media-with-text",
+      "blocks": {
+        "media-with-text-heading-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Media with text",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "media-with-text-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enlarge_text": false
+          }
+        },
+        "media-with-text-button-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional button",
+            "button_link": "/",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "media-with-text-heading-0",
+        "media-with-text-text-1",
+        "media-with-text-button-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "link-lists": {
+      "type": "link-lists",
+      "blocks": {
+        "links-column-0": {
+          "type": "column",
+          "settings": {
+            "heading": "Outdoor Drainage",
+            "heading_bg_color": "#2e2e2e",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        },
+        "links-column-1": {
+          "type": "column",
+          "settings": {
+            "heading": "Residential Irrigation",
+            "heading_bg_color": "#484848",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        },
+        "links-column-2": {
+          "type": "column",
+          "settings": {
+            "heading": "Hidden Access Covers",
+            "heading_bg_color": "#6e6e6e",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        },
+        "links-column-3": {
+          "type": "column",
+          "settings": {
+            "heading": "Outdoor Lighting",
+            "heading_bg_color": "#7c7c7c",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        },
+        "links-column-4": {
+          "type": "column",
+          "settings": {
+            "heading": "Paver Sealers & Cleaners",
+            "heading_bg_color": "#9f9f9f",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        },
+        "column_myUkyq": {
+          "type": "column",
+          "settings": {
+            "heading": "Fixings",
+            "heading_bg_color": "#2e2e2e",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "column_iCpPfG": {
+          "type": "column",
+          "settings": {
+            "heading": "Ponds & Water Features",
+            "heading_bg_color": "#2e2e2e",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "column_bJQNYC": {
+          "type": "column",
+          "settings": {
+            "heading": "Garden Edging",
+            "heading_bg_color": "#2e2e2e",
+            "heading_text_color": "#ffffff",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "links-column-0",
+        "links-column-1",
+        "links-column-2",
+        "links-column-3",
+        "links-column-4",
+        "column_myUkyq",
+        "column_iCpPfG",
+        "column_bJQNYC"
+      ],
+      "settings": {
+        "title": "Main Categories",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "small",
+        "column_align": "left",
+        "color_scheme": "1",
+        "image_ratio": "1.77",
+        "button_style": "btn--primary"
+      }
+    },
+    "multi-column": {
+      "type": "multi-column",
+      "blocks": {
+        "multi-column-0": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Pool & Outdoor Living",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Drainage",
+            "button_link": ""
+          }
+        },
+        "multi-column-1": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Lawn & Garden Areas",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "multi-column-2": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Home Filtration",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Home Filtration",
+            "button_link": ""
+          }
+        },
+        "multi-column-3": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Hidden Access Covers",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Hidden Access Covers",
+            "button_link": ""
+          }
+        },
+        "column_4PDc93": {
+          "type": "column",
+          "settings": {
+            "enable_media": true,
+            "media_scale": 100,
+            "heading": "Sub Surface Drainage",
+            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Sub Surface Drainage",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "multi-column-0",
+        "multi-column-1",
+        "multi-column-2",
+        "multi-column-3",
+        "column_4PDc93"
+      ],
+      "settings": {
+        "title": "Shop By Area",
+        "heading_align": "text-start",
+        "button_label": "View All",
+        "button_link": "",
+        "layout": "grid",
+        "column_size": "medium",
+        "column_align": "left",
+        "media_align": "text-center",
+        "image_ratio": "1",
+        "color_scheme": "1",
+        "button_style": "btn btn--secondary"
+      }
+    },
+    "featured_collection_mUUiCr": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Irrigation Kits",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "featured_collection_xTctFh": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Linear Drainage",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "Linear Drainage",
+        "content": "<p>Architect Grade Linear Drainage </p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "featured_collection_xrtx4h": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Drainage Cell",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "Drainage Cell",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "featured_collection_N7MeHa": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Geo Textile Fabric",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "Geo Textile Fabric",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "featured_collection_gKp8jF": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Garden Edging",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "featured_collection_tWRieJ": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Hidden Access Covers / Skimmer Lids",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8,
+        "show_highlight_products": true,
+        "show_promo_info": true,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "custom_liquid_fidnrz": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2025041704\"></script>\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/css/widgets/carousel-widget.css?_t=2025041704\">\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/iconfont/reviewsio-icons/style.css?_t=2025041704\">\n<div id=\"reviewsio-carousel-widget\"></div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      /*Your REVIEWS.io account ID:*/\n      store: 'www.thelandscapestore.com.au',\n      sku: '',\n      lang: 'en',\n      carousel_type: 'topHeader',\n      styles_carousel: 'CarouselWidget--topHeader--withcards',\n\n      /*Widget settings:*/\n      options:{\n        general:{\n          /*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*/\n          review_type: 'company, product, third_party',\n          /*Minimum number of reviews required for widget to be displayed*/\n          min_reviews: '1',\n          /*Maximum number of reviews to include in the carousel widget.*/\n          max_reviews: '20',\n          address_format: 'CITY, COUNTRY',\n          /*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          /*Show overall rating stars*/\n          enable_overall_stars: true,\n          rating_decimal_places: 2,\n        },\n        reviews: {\n          /*Show customer name*/\n          enable_customer_name: true,\n          /*Show customer location*/\n          enable_customer_location: true,\n          /*Show \"verified review\" badge*/\n          enable_verified_badge: true,\n          /*Show \"verified subscriber\" badge*/\n          enable_subscriber_badge: true,\n          /*Show \"I recommend this product\" badge (Only for product reviews)*/\n          enable_recommends_badge: true,\n          /*Show photos attached to reviews*/\n          enable_photos: true,\n          /*Show videos attached to reviews*/\n          enable_videos: true,\n          /*Show when review was written*/\n          enable_review_date: true,\n          /*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*/\n          disable_same_customer: true,\n          /*Minimum star rating*/\n          min_review_percent: 4,\n          /*Show 3rd party review source*/\n          third_party_source: true,\n          /*Hide reviews without comments (still shows if review has a photo)*/\n          hide_empty_reviews: true,\n          /*Show product name*/\n          enable_product_name: true,\n          /*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*/\n          tags: \"\",\n          /*Show branch, only one input*/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          /*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*/\n          enable_review_popups:  true,\n          /*Show \"was this review helpful\" buttons*/\n          enable_helpful_buttons: true,\n          /*Show how many times review was upvoted as helpful*/\n          enable_helpful_count: true,\n          /*Show share buttons*/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      /*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      /*Logo styles:*/\n      '--reviewsio-logo-style':'var(--logo-normal)',\n\n      /*Star styles:*/\n      '--common-star-color':'#429744',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', /*Modal*/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      /*Header styles:*/\n      '--header-order':'1',\n      '--header-width':'160px',\n      '--header-bg-start-color':'transparent',\n      '--header-bg-end-color':'transparent',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'0.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'0px',\n      '--header-shadow-size':'0px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.1)',\n\n      /*Header content styles:*/\n      '--header-star-color':'inherit',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'inherit',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'inherit',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'inherit',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      /*Review item styles:*/\n      '--item-maximum-columns':'5',/*Must be 3 or larger*/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'135deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'0px',\n      '--item-border-color':'rgba(0,0,0,0.1)',\n      '--item-border-radius':'0px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      /*Heading styles:*/\n      '--heading-text-color':' #0E1311',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':' inherit',\n      '--heading-text-line-height':' 1.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      /*Body text styles:*/\n      '--body-text-color':' #0E1311',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':' inherit',\n      '--body-text-line-height':' 1.4',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      /*Scroll button styles:*/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'0px',\n      '--scroll-button-vertical-position':'0px',\n\n      /*Badge styles:*/\n      '--badge-icon-color':'#0E1311',\n      '--badge-icon-font-size':'15px',\n      '--badge-text-color':'#0E1311',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      /*Author styles:*/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      /*Product photo or review photo styles:*/\n      '--photo-video-thumbnail-size':'60px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      /*Popup styles:*/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      /*Tooltip styles:*/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n});\n\n</script>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "promo-grid",
+    "featured-collection",
+    "scrolling_cta_slider_QNByj9",
+    "icons_with_text_E86zUd",
+    "product-features",
+    "media-with-text",
+    "link-lists",
+    "multi-column",
+    "featured_collection_mUUiCr",
+    "featured_collection_xTctFh",
+    "featured_collection_xrtx4h",
+    "featured_collection_N7MeHa",
+    "featured_collection_gKp8jF",
+    "featured_collection_tWRieJ",
+    "custom_liquid_fidnrz"
+  ]
+}
