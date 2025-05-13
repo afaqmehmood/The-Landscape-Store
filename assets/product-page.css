@@ -125,6 +125,6 @@
   }
   .product-main .product-media,
 .product-main .product-info {
-    padding-top: calc(12 * var(--space-unit));
+    padding-top: calc((12 * var(--space-unit))/2);
   }
 }

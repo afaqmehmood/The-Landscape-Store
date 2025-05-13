@@ -19,7 +19,7 @@
           "settings": {
             "icon": "phone",
             "heading": "Qualified Trades",
-            "text": "<p>Expert help & advice (02) 9161 3939</p>",
+            "text": "<p><a href=\"tel:(02) 9161 3939\" title=\"tel:(02) 9161 3939\">(02) 9161 3939 </a>Expert help & advice </p>",
             "link": ""
           }
         },
@@ -79,34 +79,35 @@
           "type": "text",
           "settings": {
             "image_width": 150,
-            "heading": "Talk about your store",
-            "text": "<p>Share store details, promotions, or brand content with your customers.</p>",
+            "heading": "Who is the Landscape Store?",
+            "text": "<p>The Landscape Store is a one stop shop for the homeowner and the landscape trade! Our Sydney, Artarmon shopfront and warehouse are open to the public for click and collect, We also ship Australia Wide with express shipping available.</p><p>We’re an Authorised retailer of leading brands and we hold a huge range of stock across drip irrigation, sprinklers and pop-ups, irrigation valves & controllers, Poly Pipe and fittings, Garden Lighting, Drainage & Natural Stone.</p>",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
-            "show_social": false,
+            "show_social": true,
             "text_align": "text-start"
           }
         },
         "link-list-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
-            "menu": "footer"
+            "heading": "Information",
+            "menu": "footer-information"
           }
         },
         "link-list-2": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
-            "menu": "footer"
+            "heading": "Collections",
+            "menu": "footer-collection"
           }
         },
-        "newsletter": {
+        "newsletter_trEFD7": {
           "type": "newsletter",
           "settings": {
-            "heading": "Newsletter",
-            "text": "<p>Sign up for exclusive offers, original stories, events and more.</p>",
+            "heading": "",
+            "liquid": "<div class=\"klaviyo-form-Ru9gDL\"></div>",
+            "text": "",
             "collapse_mobile": true
           }
         }
@@ -115,13 +116,13 @@
         "text",
         "link-list-1",
         "link-list-2",
-        "newsletter"
+        "newsletter_trEFD7"
       ],
       "settings": {
         "show_back_to_top": true,
         "show_payment_icons": true,
         "show_powered_by": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "secondary_menu": "",
         "bg_color": "#f4f4f4",

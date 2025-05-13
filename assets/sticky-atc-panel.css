@@ -21,6 +21,7 @@
 .card--sticky-atc {
   margin-top: 0;
   padding: 8px;
+  max-width: var(--page-width, 1320px)
 }
 .card--sticky-atc .card__media {
   flex-basis: auto;

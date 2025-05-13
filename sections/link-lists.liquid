@@ -106,6 +106,9 @@
               {%- if block.settings.image != blank -%}
                 {%- capture sizes %}{% render 'sizes-attribute', grid: true, min: 1, md: 2 %}{% endcapture -%}
                 <div class="card__media media relative w-full" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;">
+                  <a class="card_url_absolute" {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% else %}role="link" aria-disabled="true"{% endif %}>
+                    <span class="visually-hidden">{{ block.settings.heading }}</span>
+                  </a>
                   {% render 'image',
                     image: block.settings.image,
                     widths: '460, 700, 860, 1296',

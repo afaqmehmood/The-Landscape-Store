@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "main-collection-banner",
+      "custom_css": [],
+      "settings": {
+        "show_collection_title": true,
+        "show_product_count": true,
+        "show_collection_description": false,
+        "text_align": "items-center text-center",
+        "collection_image": "none",
+        "use_product_image": false,
+        "text_width": "wide",
+        "color_scheme": "default"
+      }
+    },
+    "collection-products": {
+      "type": "main-collection-products",
+      "settings": {
+        "products_per_page": 16,
+        "card_size_mobile": "small",
+        "card_size": "medium",
+        "show_layout_toggle": true,
+        "enable_filtering": true,
+        "filters_open_lg": false,
+        "stick_on_scroll": true,
+        "show_filter_counts": true,
+        "expand_filters": true,
+        "max_filter_options": 7,
+        "enable_sorting": true,
+        "show_feat_sort_opt": true,
+        "sort_first": true
+      }
+    },
+    "rich_text_cQhbqT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_neGrKG": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_neGrKG"
+      ],
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "faq_9ftkHT": {
+      "type": "faq",
+      "blocks": {
+        "question_yjziBz": {
+          "type": "question",
+          "name": "Can I install LED wall lights on any surface?",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I install LED wall lights on any surface?",
+            "text": "<p>Yes, you can install them on brick, concrete, timber and rendered walls. Some models, like inground wall lights, need recessed installation, while surface-mounted options attach directly to the wall. Always check the installation requirements before purchasing.</p>"
+          }
+        },
+        "question_3RqE8D": {
+          "type": "question",
+          "name": "Are LED wall lights suitable for coastal areas?",
+          "settings": {
+            "icon": "none",
+            "heading": "Are LED wall lights suitable for coastal areas?",
+            "text": "<p>Yes. Look for wall LED lights with powder-coated aluminium or marine-grade stainless-steel finishes that resist corrosion from salt exposure.</p>"
+          }
+        },
+        "question_mLBgwn": {
+          "type": "question",
+          "name": "Do LED step lights need wiring, or can I use solar-powered ones?",
+          "settings": {
+            "icon": "none",
+            "heading": "Do LED step lights need wiring, or can I use solar-powered ones?",
+            "text": "<p>Most LED step lights need low-voltage wiring (12V or 24V) for reliable performance, while some models support 240V hardwired installation. Solar-powered step lights exist, but they don’t provide the same brightness or consistency as wired options.</p>"
+          }
+        },
+        "question_rxBa9j": {
+          "type": "question",
+          "name": "How bright should LED step lights be?",
+          "settings": {
+            "icon": "none",
+            "heading": "How bright should LED step lights be?",
+            "text": "<p>For stairs and pathways, 1W to 5W LED step lights provide enough brightness for safe movement without creating glare. 3000K warm white lighting offers a soft and inviting glow that works well in outdoor spaces.</p>"
+          }
+        },
+        "question_MDBYjB": {
+          "type": "question",
+          "name": "Can I dim LED wall lights?",
+          "settings": {
+            "icon": "none",
+            "heading": "Can I dim LED wall lights?",
+            "text": "<p>Yes, you can dim some LED wall lights with a compatible low-voltage <a href=\"https://www.thelandscapestore.com.au/products/pondmax-12v-transformer?_pos=2&_sid=8ee2eef7a&_ss=r\"><span style=\"text-decoration:underline\">transformer</span></a> or dimmable driver. If you need adjustable brightness, check the product specifications before buying.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_yjziBz",
+        "question_3RqE8D",
+        "question_mLBgwn",
+        "question_rxBa9j",
+        "question_MDBYjB"
+      ],
+      "name": "Collapsible content",
+      "settings": {
+        "heading": "FAQs",
+        "heading_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "collection-products",
+    "rich_text_cQhbqT",
+    "faq_9ftkHT"
+  ]
+}

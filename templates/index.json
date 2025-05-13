@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/TLS_DESKTOP_BANNER_-_WEBSITE_BANNER_-_5_STARS.jpg",
+            "image_desktop": "shopify://shop_images/DESKTOP_BANNER_-_tim_Edit_SLIM_-_TLS_51ea58b7-0852-46b2-9071-40d60e4443e8.jpg",
             "image_mobile": "shopify://shop_images/TLS_MOBILE_BANNER.jpg",
             "url": "",
             "overlay_position": "justify-center items-center",
@@ -191,29 +191,6 @@
         "color_scheme": "default"
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured collection",
-        "heading_align": "text-start",
-        "show_view_all": true,
-        "collection": "",
-        "layout": "carousel",
-        "card_size_mobile": "small",
-        "card_size": "small",
-        "products_to_show": 8,
-        "show_highlight_products": true,
-        "show_promo_info": true,
-        "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "/",
-        "button_label": "Optional Button",
-        "color_scheme": "2",
-        "button_style": "btn btn--primary"
-      }
-    },
     "scrolling_cta_slider_QNByj9": {
       "type": "scrolling_cta_slider",
       "blocks": {
@@ -280,8 +257,8 @@
           "type": "item",
           "settings": {
             "icon": "check_mark_in_circle",
-            "heading": "Real Time Stock Levels",
-            "text": "<p>Every product page will show live stock availability </p>",
+            "heading": "Australia Wide Delivery",
+            "text": "<p>Express Shipping Available</p>",
             "link": ""
           }
         },
@@ -289,8 +266,8 @@
           "type": "item",
           "settings": {
             "icon": "price_tag",
-            "heading": "Trade Pricing",
-            "text": "<p>Monthly trade specials direct to your inbox for verified trade customers</p>",
+            "heading": "Got a question?",
+            "text": "<p>Call us <a href=\"tel:(02) 9161 3939\" title=\"tel:(02) 9161 3939\">(02) 9161 3939</a></p>",
             "link": ""
           }
         },
@@ -298,8 +275,8 @@
           "type": "item",
           "settings": {
             "icon": "return",
-            "heading": "Fast Delivery with Live Tracking",
-            "text": "<p>Sydney Metro: Same Day Delivery<br/>Australia Wide: Express Shipping</p>",
+            "heading": "Same Day Delivery",
+            "text": "<p>Sydney Metro or Express Aus Wide</p>",
             "link": ""
           }
         },
@@ -307,7 +284,7 @@
           "type": "item",
           "settings": {
             "icon": "map_pin",
-            "heading": "Sydney Shop & Warehouse",
+            "heading": "Visit in store or Shop Online",
             "text": "<p>47 Carlotta St, Artarmon</p>",
             "link": ""
           }
@@ -335,198 +312,103 @@
         "prevent_animation": false
       }
     },
-    "product-features": {
-      "type": "product-features",
-      "blocks": {
-        "feature-0": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.</p>",
-            "content_align": "text-start",
-            "hotspot_x": 28,
-            "hotspot_y": 38
-          }
-        },
-        "feature-1": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.</p>",
-            "content_align": "text-start",
-            "hotspot_x": 60,
-            "hotspot_y": 23
-          }
-        },
-        "feature-2": {
-          "type": "feature",
-          "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.</p>",
-            "content_align": "text-start",
-            "hotspot_x": 73,
-            "hotspot_y": 54
-          }
-        }
-      },
-      "block_order": [
-        "feature-0",
-        "feature-1",
-        "feature-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "",
-        "show_content": true,
-        "layout": "text_first",
-        "text_align": "text-center",
-        "mob_center_text": false,
-        "heading_size": "h1",
-        "enlarge_text": false,
-        "title": "Product features",
-        "description": "<p>Use this section to highlight specific product features to your customers.</p>",
-        "button_label": "",
-        "button_link": "",
-        "hotspot_color": "#070707",
-        "color_scheme": "none",
-        "button_style": "btn btn--primary"
-      }
-    },
-    "media-with-text": {
-      "type": "media-with-text",
-      "blocks": {
-        "media-with-text-heading-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Media with text",
-            "heading_size": "h3",
-            "heading_h1": false
-          }
-        },
-        "media-with-text-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enlarge_text": false
-          }
-        },
-        "media-with-text-button-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Optional button",
-            "button_link": "/",
-            "button_style": "btn btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "media-with-text-heading-0",
-        "media-with-text-text-1",
-        "media-with-text-button-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "video_external": "",
-        "video_description": "",
-        "video_autoplay": false,
-        "layout": "left",
-        "image_fit": "contain",
-        "media_width": 50,
-        "media_scale": 100,
-        "text_align": "text-start",
-        "color_scheme": "none",
-        "only_content_color_scheme": false
-      }
-    },
     "link-lists": {
       "type": "link-lists",
       "blocks": {
         "links-column-0": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/outdoor_drainage_400px.png",
             "heading": "Outdoor Drainage",
-            "heading_bg_color": "#2e2e2e",
+            "heading_bg_color": "#429744",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": "/"
+            "menu": "outdoor-drainage",
+            "button_label": "View More",
+            "button_link": "shopify://collections/drainage"
           }
         },
         "links-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/irrigation_400px.png",
             "heading": "Residential Irrigation",
-            "heading_bg_color": "#484848",
+            "heading_bg_color": "#429744",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": "/"
+            "menu": "residential-irrigation",
+            "button_label": "View More",
+            "button_link": "shopify://collections/garden-irrigation-1"
           }
         },
         "links-column-2": {
           "type": "column",
           "settings": {
-            "heading": "Hidden Access Covers",
-            "heading_bg_color": "#6e6e6e",
+            "image": "shopify://shop_images/access_cover_400px-updated-1.png",
+            "heading": "Hide Access Covers",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": "/"
+            "menu": "hidden-access-covers",
+            "button_label": "View More",
+            "button_link": "shopify://collections/hidden-access-covers"
           }
         },
         "links-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/outdoor_lighting_400px.png",
             "heading": "Outdoor Lighting",
-            "heading_bg_color": "#7c7c7c",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": "/"
+            "menu": "outdoor-lighting",
+            "button_label": "View More",
+            "button_link": "shopify://collections/outdoor-lighting"
           }
         },
         "links-column-4": {
           "type": "column",
           "settings": {
-            "heading": "Paver Sealers & Cleaners",
-            "heading_bg_color": "#9f9f9f",
+            "image": "shopify://shop_images/Sealers_400px.png",
+            "heading": "Sealers & Cleaners",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": "/"
+            "menu": "paver-sealers-and-cleaners",
+            "button_label": "View More",
+            "button_link": "shopify://collections/sealers-cleaners"
           }
         },
         "column_myUkyq": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/fixing_400px.png",
             "heading": "Fixings",
-            "heading_bg_color": "#2e2e2e",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": ""
+            "menu": "fixing",
+            "button_label": "View More",
+            "button_link": "shopify://collections/fixings"
           }
         },
         "column_iCpPfG": {
           "type": "column",
           "settings": {
-            "heading": "Ponds & Water Features",
-            "heading_bg_color": "#2e2e2e",
+            "image": "shopify://shop_images/ponds_400px.png",
+            "heading": "Water Features",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": ""
+            "menu": "ponds-water-features",
+            "button_label": "View More",
+            "button_link": "shopify://collections/ponds-water-features"
           }
         },
         "column_bJQNYC": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/garden_edging.png",
             "heading": "Garden Edging",
-            "heading_bg_color": "#2e2e2e",
+            "heading_bg_color": "#2c7e3f",
             "heading_text_color": "#ffffff",
-            "menu": "",
-            "button_label": "Optional button",
-            "button_link": ""
+            "menu": "garden-edging",
+            "button_label": "View More",
+            "button_link": "shopify://collections/garden-edging"
           }
         }
       },
@@ -560,55 +442,60 @@
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/One_Channel_Shoot-6_1000px_1000px.png",
             "media_scale": 100,
             "heading": "Pool & Outdoor Living",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Drainage",
-            "button_link": ""
+            "text": "",
+            "button_label": "Shop All Pool & Outdoor Living",
+            "button_link": "shopify://collections/ponds-water-features"
           }
         },
         "multi-column-1": {
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/Carl_Gilmore-22.jpg",
             "media_scale": 100,
             "heading": "Lawn & Garden Areas",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "",
-            "button_link": ""
+            "text": "",
+            "button_label": "Shop All Home Lawn and Garden Supplies",
+            "button_link": "shopify://collections/home-garden"
           }
         },
         "multi-column-2": {
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/ro270-reverse-osmosis-tap-_-filter-kit-4.jpg",
             "media_scale": 100,
             "heading": "Home Filtration",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Home Filtration",
-            "button_link": ""
+            "text": "",
+            "button_label": "Shop All Home Filtration",
+            "button_link": "shopify://collections/home-filtration"
           }
         },
         "multi-column-3": {
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/hide-skimmer-lid-and-access-cover-342mm.jpg",
             "media_scale": 100,
             "heading": "Hidden Access Covers",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Hidden Access Covers",
-            "button_link": ""
+            "text": "",
+            "button_label": "Shop All Hidden Access Covers",
+            "button_link": "shopify://collections/hide-skimmer-lids"
           }
         },
         "column_4PDc93": {
           "type": "column",
           "settings": {
             "enable_media": true,
+            "image": "shopify://shop_images/Chatswood-drainage-cell-feature.jpg",
             "media_scale": 100,
             "heading": "Sub Surface Drainage",
-            "text": "<p>Pair text with an image to focus on a product, collection or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Sub Surface Drainage",
-            "button_link": ""
+            "text": "",
+            "button_label": "Shop All Sub Surface Drainage",
+            "button_link": "shopify://collections/subsoil-drainage"
           }
         }
       },
@@ -622,9 +509,9 @@
       "settings": {
         "title": "Shop By Area",
         "heading_align": "text-start",
-        "button_label": "View All",
+        "button_label": "",
         "button_link": "",
-        "layout": "grid",
+        "layout": "carousel",
         "column_size": "medium",
         "column_align": "left",
         "media_align": "text-center",
@@ -640,7 +527,7 @@
         "title": "Irrigation Kits",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "irrigation-bundles",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -648,10 +535,10 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "",
-        "link_url": "",
-        "button_label": "Button",
+        "promo_title": "Effortless Irrigation Starts Here",
+        "content": "<p>Our irrigation bundles include high-quality fittings, drip lines, pop-ups, and valves to suit lawns, garden beds, and more. Designed for easy installation by homeowners and tradies alike.</p>",
+        "link_url": "shopify://collections/irrigation-bundles",
+        "button_label": "Shop All Irrigation Kits",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -663,18 +550,18 @@
         "title": "Linear Drainage",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "linear-drainage",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
         "products_to_show": 8,
         "show_highlight_products": true,
         "show_promo_info": true,
-        "image_ratio": "fill",
-        "promo_title": "Linear Drainage",
-        "content": "<p>Architect Grade Linear Drainage </p>",
-        "link_url": "",
-        "button_label": "Button",
+        "image_ratio": "0.75",
+        "promo_title": "Modular Outdoor Drainage System",
+        "content": "<p>Our architect grade linear drainage system offers easy to install, <br/>cut to length, join, or corner as needed. <br/>Choose from premium grate options including stainless steel, aluminium, or tile insert to suit any outdoor finish.<br/><br/></p>",
+        "link_url": "shopify://collections/linear-drainage",
+        "button_label": "Shop All Linear Drainage",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -686,7 +573,7 @@
         "title": "Drainage Cell",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "drainage-cell",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -694,10 +581,10 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image_ratio": "fill",
-        "promo_title": "Drainage Cell",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
+        "promo_title": "Efficient Water Management",
+        "content": "<p>Vertsatile product suitable for many applications including the drainage of sports fields, civil works, retaining walls and other landscaping applications. <br/><br/></p>",
+        "link_url": "shopify://collections/drainage-cell",
+        "button_label": "Shop All Drainage Cell",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -709,7 +596,7 @@
         "title": "Geo Textile Fabric",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "geofabric",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -717,10 +604,10 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image_ratio": "fill",
-        "promo_title": "Geo Textile Fabric",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
+        "promo_title": "High-Quality Geofabric Rolls",
+        "content": "<p>Cost effective solution for the filtration of water. Great for subsoil drainage or absorption trenches.</p>",
+        "link_url": "shopify://collections/geofabric",
+        "button_label": "Shop All Geo Fabric",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -732,7 +619,7 @@
         "title": "Garden Edging",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "garden-edging",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -740,10 +627,10 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
+        "promo_title": "Durable Edging Solutions",
+        "content": "<p>Crafted from aluminium, these edgings are designed to withstand the elements while enhancing the aesthetic appeal of your garden. Available in silver, black or rust colour.<br/><br/></p>",
+        "link_url": "shopify://collections/garden-edging",
+        "button_label": "Shop All Garden Edging",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -755,7 +642,7 @@
         "title": "Hidden Access Covers / Skimmer Lids",
         "heading_align": "text-start",
         "show_view_all": true,
-        "collection": "",
+        "collection": "hide-skimmer-lids",
         "layout": "carousel",
         "card_size_mobile": "small",
         "card_size": "small",
@@ -763,10 +650,10 @@
         "show_highlight_products": true,
         "show_promo_info": true,
         "image_ratio": "fill",
-        "promo_title": "A headline to grab attention",
-        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
-        "link_url": "",
-        "button_label": "Button",
+        "promo_title": "Stylish Tile Inserts for Skimmer Lids",
+        "content": "<p>Designed to seamlessly integrate with your outdoor spaces, including pools and patios. Available in 316L Stainless steel or polymer.<br/><br/></p>",
+        "link_url": "shopify://collections/hide-skimmer-lids",
+        "button_label": "Shop All Hide Skimmer Lid",
         "color_scheme": "2",
         "button_style": "btn btn--primary"
       }
@@ -786,11 +673,8 @@
   "order": [
     "slideshow",
     "promo-grid",
-    "featured-collection",
     "scrolling_cta_slider_QNByj9",
     "icons_with_text_E86zUd",
-    "product-features",
-    "media-with-text",
     "link-lists",
     "multi-column",
     "featured_collection_mUUiCr",

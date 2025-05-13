@@ -21,6 +21,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if rtl %}rtl{% else %}ltr{% endif %}">
 <head>
+ {%- render 'ecom_header' -%}
   {%- render 'doc-head-core' -%}
   {%- render 'doc-head-social' -%}
 
@@ -299,7 +300,7 @@
     {{- settings.custom_html_head -}}
     <!-- CC Custom Head End -->
   {%- endif -%}
-</head>
+{% render 'prime-css' %} </head>
 
 <body{% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
   <a class="skip-link btn btn--primary visually-hidden" href="#main-content" data-ce-role="skip">
@@ -462,5 +463,5 @@
   {%- if request.design_mode == false and settings.preload_links -%}
     <script src="{{ 'instant-page.js' | asset_url }}" type="module" defer="defer"></script>
   {%- endif -%}
-</body>
+{%- render "ecom_footer"-%}{% render 'primeb-js' %} {% render 'primebcustomerloc-js' %} </body>
 </html>

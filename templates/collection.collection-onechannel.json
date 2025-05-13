@@ -1,0 +1,333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "media_with_text_Qa36xW": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_YwC7d6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Grated Drains | Outdoor Linear Drainage System",
+            "heading_size": "h4",
+            "heading_h1": false
+          }
+        },
+        "text_t98NAL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The ONE CHANNEL ultra modular drainage system by Grated drains offers the trade and home owner alike an easy to install and easy to specify linear drainage system.<br/><br/>Installation is easy, Simply cut the outdoor drainage channel to length and connect or terminate using the supplied joiners or end caps.</p><p>Available in different channel sizes to suit different capacities, as well as different grate styles to suit your outdoor area.</p><p>Speak to our friendly team today about our ONE CHANNEL linear drainage system</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_bzEBpT": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YwC7d6",
+        "text_t98NAL",
+        "button_bzEBpT"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "image": "shopify://shop_images/Logo_Square_1200x-01.png",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "left",
+        "image_fit": "contain",
+        "media_width": 50,
+        "media_scale": 100,
+        "text_align": "text-start",
+        "color_scheme": "none",
+        "only_content_color_scheme": false
+      }
+    },
+    "collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "show_collection_title": true,
+        "show_product_count": true,
+        "show_collection_description": false,
+        "text_align": "items-center text-center",
+        "collection_image": "none",
+        "use_product_image": false,
+        "text_width": "wide",
+        "color_scheme": "default"
+      }
+    },
+    "collection-products": {
+      "type": "main-collection-products",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "card_size_mobile": "small",
+        "card_size": "medium",
+        "show_layout_toggle": true,
+        "enable_filtering": true,
+        "filters_open_lg": false,
+        "stick_on_scroll": true,
+        "show_filter_counts": true,
+        "expand_filters": true,
+        "max_filter_options": 7,
+        "enable_sorting": true,
+        "show_feat_sort_opt": true,
+        "sort_first": true
+      }
+    },
+    "rich_text_cQhbqT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_neGrKG": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.description }}",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_neGrKG"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "wide": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "featured_product_JA9Ypx": {
+      "type": "featured-product",
+      "blocks": {
+        "view_more_button_YEThFa": {
+          "type": "view-more-button",
+          "settings": {
+            "button_label": "Click to view full product page",
+            "text_align": "text-end"
+          }
+        },
+        "vendor_sku_jDH8yf": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_barcode": false
+          }
+        },
+        "title_YW7DqE": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "price_PPr4GM": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "divider_E7fjhL": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "variant_picker_agVP7f": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": false,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_YaLjJh": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "divider_NpzMiE": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        }
+      },
+      "block_order": [
+        "view_more_button_YEThFa",
+        "vendor_sku_jDH8yf",
+        "title_YW7DqE",
+        "price_PPr4GM",
+        "divider_E7fjhL",
+        "variant_picker_agVP7f",
+        "buy_buttons_YaLjJh",
+        "divider_NpzMiE"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "one-channel-outdoor-modular-drainage-system",
+        "select_first_variant": true,
+        "media_ratio": "natural",
+        "media_crop": "none",
+        "media_width": 50,
+        "enable_video_looping": false,
+        "enable_zoom": true,
+        "zoom_mode": "hover",
+        "hover_zoom": "large",
+        "color_scheme": "1",
+        "border_color": "transparent",
+        "bg_color": "#f4f4f4"
+      }
+    },
+    "featured_product_JKap8L": {
+      "type": "featured-product",
+      "blocks": {
+        "view_more_button_ARaF4A": {
+          "type": "view-more-button",
+          "settings": {
+            "button_label": "Click to view full product page",
+            "text_align": "text-end"
+          }
+        },
+        "vendor_sku_jKwwtw": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_barcode": false
+          }
+        },
+        "title_dqfwAL": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "price_KMqE3n": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "divider_4rzdD9": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "variant_picker_NXA6JB": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": false,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_EJTjKn": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "divider_UQzqYF": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        }
+      },
+      "block_order": [
+        "view_more_button_ARaF4A",
+        "vendor_sku_jKwwtw",
+        "title_dqfwAL",
+        "price_KMqE3n",
+        "divider_4rzdD9",
+        "variant_picker_NXA6JB",
+        "buy_buttons_EJTjKn",
+        "divider_UQzqYF"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "one-channel-tile-insert-drain",
+        "select_first_variant": true,
+        "media_ratio": "natural",
+        "media_crop": "none",
+        "media_width": 50,
+        "enable_video_looping": false,
+        "enable_zoom": true,
+        "zoom_mode": "hover",
+        "hover_zoom": "large",
+        "color_scheme": "1",
+        "border_color": "transparent",
+        "bg_color": "#f4f4f4"
+      }
+    },
+    "featured_collection_BRMcEV": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "One Channel Accessories",
+        "heading_align": "text-start",
+        "show_view_all": true,
+        "collection": "one-channel-accessories",
+        "layout": "grid",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 24,
+        "show_highlight_products": true,
+        "show_promo_info": false,
+        "image_ratio": "fill",
+        "promo_title": "A headline to grab attention",
+        "content": "<p>Use this card with an image to highlight your collections or introduce a promotion.</p>",
+        "link_url": "",
+        "button_label": "Button",
+        "color_scheme": "2",
+        "button_style": "btn btn--primary"
+      }
+    }
+  },
+  "order": [
+    "media_with_text_Qa36xW",
+    "collection-banner",
+    "collection-products",
+    "rich_text_cQhbqT",
+    "featured_product_JA9Ypx",
+    "featured_product_JKap8L",
+    "featured_collection_BRMcEV"
+  ]
+}

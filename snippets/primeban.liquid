@@ -1,0 +1,206 @@
+{% assign HideAssets = hideAssets | default: 0 %}{% if HideAssets != '1' %}{% render 'prime-css' %}{% endif %}
+		{% assign primebanMobileSize = primebanMobileSize | default: 100 %}
+			{% assign primebanTabletSize = primebanTabletSize | default: 100 %}
+			{% assign primebanProduct = product %}
+			{% assign primebanCustId = customer.id %}
+			{% assign primebGiftCard = product.gift_card? %}
+			{% assign primebanVarient = product.variants.size %}
+			{%- assign primebanmoneyformat = shop.money_format | split: "{{" | last | remove: "}}" | strip | strip_html -%}
+			{% if primebanmoneyformat == "amount_with_comma_separator" or primebanmoneyformat == "amount_no_decimals_with_comma_separator" %}
+				{% assign primebanProdPrice = product.price | money_without_currency | remove: "." | replace: ",", "." %}
+				{% assign primebanProdPriceCompare = product.compare_at_price | money_without_currency | remove: "." | replace: ",", "." | default: 0 %}
+			{% else %} 
+				{% assign primebanProdPrice = product.price | money_without_currency | remove: "," %}
+				{% assign primebanProdPriceCompare = product.compare_at_price | money_without_currency | remove: "," | default: 0 %}
+			{% endif %}
+			{% assign primebanProdPrice = product.price | divided_by: 100.00 %}
+			{% assign primebanCustomerTag = customer.tags | downcase %}
+			{% assign primebCompanyName = customer.current_company.name | downcase %}
+			{% assign primebanPublishedDate = product.published_at | date: "%s" %}
+			{% assign primebanPublishDateDiff = "now" | date: "%s" | minus: primebanPublishedDate %}
+			{% assign primebanTemplate = template | downcase %}
+			{% assign primebanLanguage = request.locale.iso_code | downcase %}
+			{% assign primemetafield = primebanProduct.metafields %}
+			{% assign primebanProductTitle = primebanProduct.title | downcase %}
+			{% assign primebanProductType = primebanProduct.type | downcase %}
+			{% assign primebanProductVendor = primebanProduct.vendor | downcase %}
+			{% assign primebanShopifyTags = primebanProduct.tags | downcase %}
+			{% assign primebanProductWeight = product.variants.first.weight %}
+			{% assign primebanUTC = "now" | date: "%s" %}
+			{% assign primebanstartTime = "633834000"  %}
+			{% assign primebanEndTime = "2053904400"  %}
+			{% assign primebanMaxDisplayBanner = primebanMaxDisplayBanner | default: 10 %}	
+			{% assign primebanCreatedDateSec = primebanProduct.created_at | date: "%s" %}
+			{% assign primebanDateDiff = "now" | date: "%s" | minus: primebanCreatedDateSec %}
+			{% assign primebanCollectionIds = primebanProduct.collections | map: "id" | default: 0 %}			
+			{% assign primebanBannerCounter = 1 %}
+			{% assign VariantCount = product.variants.size %}
+			{% assign SaleAmount    = 0 %}	
+			{% assign SalePercent   = 0 %}
+			{% assign CustomerOrderCount = customer.orders_count | default: 0 %}
+			{% assign CustomerTotalSpent = customer.total_spent | divided_by: 100.00  | default: 0 %}
+			{% assign ProductSKU = product.variants.first.sku | downcase | default: 0 %}
+			{% assign VariantSKU = product.selected_or_first_available_variant.sku | downcase | default: 0 %}
+			{% assign primebannerLinks = primebanLinks | default: 0 %} 
+			{% assign primeGroup = primebanGroup | default: "1" %}
+			{% if primebanProduct.price and primebanProduct.compare_at_price %}
+				{% assign SaleAmount = primebanProduct.compare_at_price | minus: primebanProduct.price %}	
+				{% if SaleAmount > 0 %}
+					{% if primebanmoneyformat == "amount_with_comma_separator" or primebanmoneyformat == "amount_no_decimals_with_comma_separator" or  primebanmoneyformat contains "amount_with_comma_separator" %}
+						{% assign SalePercent = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | money_without_currency | replace: ",", "." | times: 100 | remove: ".0" | plus: 0 %}
+					{% elsif primebanmoneyformat contains "amount_no_decimals" %} 
+						{% assign divisor = product.compare_at_price  | times: 1.0 %}
+						{% assign SalePercent = product.compare_at_price | minus: product.price | divided_by: divisor  | times: 100.0 | round %}
+					{% else %} 
+						{% assign SalePercent = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | money_without_currency | times: 100 | remove: ".0" | plus: 0 %}
+					{% endif %}
+				{% endif %}
+        	{% endif %}
+        	{% assign Inventory = 0 %}
+			{% assign Inventory2 = 0 %}
+			{% assign PrimebanVariantInventory = 0 %}
+			{% assign PrimebanVariantInventoryPolicy = "any" %}
+			{% if passvariantban.id %} 
+				{% assign PrimebanVariantInventory = passvariantban.inventory_quantity %}	
+				{% assign PrimebanVariantInventoryPolicy = passvariantban.inventory_policy %}
+				{% assign VariantSKU = passvariantban.sku | downcase %}
+				{% assign VariantSelectedOption = passvariantban.title | downcase %}
+				{% assign VariantMetafield=passvariantban.metafields %}
+			{% endif %}
+			{% assign SaleAmountVar  = 0 %}	
+			{% assign SalePercentVar = 0 %}
+			{% assign SalePercentMin = 0 %}
+			{% assign SalePercentMax = 0 %}
+			{% assign VariantSaleAmount = SaleAmountVar %}	
+			{% assign VariantSalePercent = SalePercentVar %}
+        	{% for productVariant in primebanProduct.variants %}
+				{% assign Inventory2 = productVariant.inventory_quantity | at_least: 0 %}
+				{% assign Inventory = Inventory | plus: Inventory2 %}	
+				{% if productVariant.price and productVariant.compare_at_price %}
+					{% assign SaleAmountVar = productVariant.compare_at_price | minus: productVariant.price %}	
+					{% if SaleAmountVar > 0 %}
+						{% if primebanmoneyformat == "amount_with_comma_separator" or primebanmoneyformat == "amount_no_decimals_with_comma_separator" or  primebanmoneyformat contains "amount_with_comma_separator" %}
+							{% assign SalePercentVar = productVariant.compare_at_price | minus: productVariant.price | times: 100.0 | divided_by: productVariant.compare_at_price | money_without_currency | replace: ",", "." | times: 100 | remove: ".0" | plus: 0 %}
+						{% elsif primebanmoneyformat contains "amount_no_decimals" %} 
+							{% assign divisor = productVariant.compare_at_price  | times: 1.0 %}
+							{% assign SalePercentVar = productVariant.compare_at_price | minus: productVariant.price | divided_by: divisor  | times: 100.0 | round %}
+						{% else %} 
+							{% assign SalePercentVar = productVariant.compare_at_price | minus: productVariant.price | times: 100.0 | divided_by: productVariant.compare_at_price | money_without_currency | times: 100 | remove: ".0" | plus: 0 %}
+						{% endif %}
+						{% if SalePercentMin == 0 or SalePercentMin > SalePercentVar %}
+							{% assign SalePercentMin = SalePercentVar %}
+						{% endif %}
+						{% if SalePercentMax == 0 or SalePercentMax < SalePercentVar %}
+							{% assign SalePercentMax = SalePercentVar %}
+						{% endif %}
+						{% if passvariantban.id %} 
+							{% if passvariantban.id == productVariant.id %} 
+								{% assign VariantSaleAmount = SaleAmountVar %}	
+								{% assign VariantSalePercent = SalePercentVar %}
+							{% endif %}
+						{% endif %}
+					{% endif %}
+				{% endif %}		
+			{% endfor %}<div class="primeBanners outerprimeban{{product.id}}-{{primeGroup}} {{primebanOuterClass}} prime-d-block" style="{{ primebanOuterStyle }}"  data-primebanOuterClass="{{primebanOuterClass}}" data-primebanOuterStyle="{{primebanOuterStyle}}" data-primebanInnerClass="{{primebanInnerClass}}" data-primebanInnerStyle="{{primebanInnerStyle}}" data-primebanImageClass="{{primebanImageClass}}" data-primebanImageStyle="{{primebanImageStyle}}" data-primebanTextClass="{{primebanTextClass}}" data-primebanTextStyle="{{primebanTextStyle}}" data-primebanTitleClass="{{primebanTitleClass}}" data-primebanTitleStyle="{{primebanTitleStyle}}" data-primebanSubTitleClass="{{primebanSubTitleClass}}" data-primebanSubTitleStyle="{{primebanSubTitleStyle}}" data-primebanGroup="{{primeGroup}}" data-primebanMaxDisplayBanner="{{primebanMaxDisplayBanner}}">	
+  	{% comment %} Start Banner: 1 {% endcomment %}
+  	{% if primebanBannerCounter <= primebanMaxDisplayBanner %}
+  	 {% assign isStartbShowBanner = false %} {% assign primebanProductIds = "10149972869284,10149972934820,10149972967588,10149973000356,10149973033124,10149973131428" | split: "," %}
+						{% assign isprimebanProductFound = false %}
+						{% assign primebanProductId = primebanProduct.id | downcase %}
+                        {% if primebanProductIds contains primebanProductId %}
+                            {% assign isprimebanProductFound = true %}
+                        {% endif %}{% if product.metafields.prime.myordercount != blank %}
+							{% if product.metafields.prime.myordercount.value.ordercount %}
+								{% assign OrderCount = product.metafields.prime.myordercount.value.ordercount | default: 0 %}
+								{% assign RecentSoldCount = product.metafields.prime.myordercount.value.recentcount | default: 0 %}
+							{% else%}
+								{% assign OrderCount = product.metafields.prime.myordercount.ordercount | default: 0 %}
+								{% assign RecentSoldCount = product.metafields.prime.myordercount.recentcount | default: 0 %}
+							{% endif %}
+						{% else  %} 
+							{% assign OrderCount = product.metafields.prime.ordercount | default: 0 %}
+							{% assign RecentSoldCount = product.metafields.prime.recentcount | default: 0 %}
+						{% endif %}{% if  true == isprimebanProductFound  %}{% assign isStartbShowBanner = true %}{% endif %}{% assign primebanUTC 		= "now" | date: "%s" %}
+			{% assign primebanUTC 		= primebanUTC | plus: 0 %}
+			{% assign primebanStartTime = 633834000  %}
+			{% assign primebanEndTime = 2053904400  %}
+			{% if primebanStartTime <= primebanUTC and primebanEndTime >= primebanUTC %}{% assign Image = 'https://img.icons8.com/444444/ios-glyphs/2x/checkout'  %}{% assign Imagesize = Image  %}{% if isStartbShowBanner == true %} 
+				{% assign primebannerGroup = '2' %} 
+				{% if primeGroup == primebannerGroup %}
+				{% assign primebanBannerCounter = primebanBannerCounter | plus: 1 %}{% assign lastbanstringtitle = '' %}{% assign lastbanstringsubtitle = '' %}<div class="primebanDesktop prime-d-block {{primebanInnerClass}} prime-p-3 primeban-2115   primebanScreenSize  "  data-countryselectedban= '' data-screensizeselectedb= '1,1,1,1'  countryrule=1 visitorcountryrule=0 onclick="redirectLinkban('','0','2115','1');" style=" {{ primebanInnerStyle }}box-sizing: border-box; background-color: rgb(255, 255, 255); font-size: 15px; position: relative; max-width: 100%; border-radius: 0.5em; border: 3px solid rgb(66, 151, 68); opacity: 1; ">
+
+    <div class="primebanImageOuter prime-d-table-cell prime-align-middle prime-pr-3">
+        <img class="primebanImage prime-d-block prime-mx-auto {{primebanImageClass}}" alt="checkout" style="max-height:50px;min-height:50px;max-width:50px;min-width:50px; {{primebanImageStyle}} " src="{{Imagesize}}">
+    </div>
+
+	<div class="primebanTexts prime-d-table-cell prime-align-middle {{primebanTextClass}} "  style=" {{primebanTextsStyle}}">	
+        <div class="primebanTitle prime-mb-1 {{primebanTitleClass}} " data-primeproductid='{{product.id}}' data-timerval1='{{  }}' style="color: rgb(46, 139, 87); font-weight: bold; font-size: 20px; line-height: 20px; {{primebanTitleStyle}}  ">
+            {% if lastbanstringtitle == '' %}
+                25 Square Metre Minimum Order Quantity.
+            {% else %}
+                {{lastbanstringtitle}}
+            {% endif %}
+        </div>
+        <div class="primebanSubTitle {{primebanSubTitleClass}} " data-primeproductid='{{product.id}}' data-timerval2='{{  }}' style="color: rgb(46, 139, 87); font-size: 15px; line-height: 15px; {{primebanSubTitleStyle}} ">
+            {% if lastbanstringsubtitle == '' %}
+                Requires 2 Full Business days notice. Sydney Metro delivery only. Turf cut fresh on delivery day! Call now at 02 9131 3939 for enquiry
+            {% else %}
+                {{lastbanstringsubtitle}}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}{% endif %}{% endif %}	{% endif %}
+	{% comment %} End Banner: 1 {% endcomment %}	
+	
+		
+  	{% comment %} Start Banner: 2 {% endcomment %}
+  	{% if primebanBannerCounter <= primebanMaxDisplayBanner %}
+  	 {% assign isStartbShowBanner = false %} {% assign newstringvendor0 = "ULTRA DRAINS PLUS" | downcase %}{% if product.metafields.prime.myordercount != blank %}
+							{% if product.metafields.prime.myordercount.value.ordercount %}
+								{% assign OrderCount = product.metafields.prime.myordercount.value.ordercount | default: 0 %}
+								{% assign RecentSoldCount = product.metafields.prime.myordercount.value.recentcount | default: 0 %}
+							{% else%}
+								{% assign OrderCount = product.metafields.prime.myordercount.ordercount | default: 0 %}
+								{% assign RecentSoldCount = product.metafields.prime.myordercount.recentcount | default: 0 %}
+							{% endif %}
+						{% else  %} 
+							{% assign OrderCount = product.metafields.prime.ordercount | default: 0 %}
+							{% assign RecentSoldCount = product.metafields.prime.recentcount | default: 0 %}
+						{% endif %}{% if primebanProductVendor == newstringvendor0 %}{% assign isStartbShowBanner = true %}{% endif %}{% assign primebanUTC 		= "now" | date: "%s" %}
+			{% assign primebanUTC 		= primebanUTC | plus: 0 %}
+			{% assign primebanStartTime = 633834000  %}
+			{% assign primebanEndTime = 2053904400  %}
+			{% if primebanStartTime <= primebanUTC and primebanEndTime >= primebanUTC %}{% assign Image = 'prime_ban1650.png'  %}{% assign ImageHeight = 'x50' %}{% assign Imagesize = Image | asset_img_url: 'master' %}{% if isStartbShowBanner == true %} 
+				{% assign primebannerGroup = '1' %} 
+				{% if primeGroup == primebannerGroup %}
+				{% assign primebanBannerCounter = primebanBannerCounter | plus: 1 %}{% assign lastbanstringtitle = '' %}{% assign lastbanstringsubtitle = '' %}<div class="primebanDesktop prime-d-block {{primebanInnerClass}} prime-p-3 primeban-1650   primebanScreenSize  "  data-countryselectedban= '' data-screensizeselectedb= '1,1,1,1'  countryrule=1 visitorcountryrule=0 onclick="redirectLinkban('https://www.thelandscapestore.com.au/products/one-channel-outdoor-modular-drainage-system','0','1650','1');" style="cursor:pointer; {{ primebanInnerStyle }}box-sizing: border-box; background-color: rgb(255, 255, 255); font-size: 15px; position: relative; max-width: 100%; border-radius: 0.5em; border: 4px solid rgb(34, 135, 201); opacity: 1; ">
+
+    <div class="primebanImageOuter prime-d-table-cell prime-align-middle prime-pr-3">
+        <img class="primebanImage prime-d-block prime-mx-auto {{primebanImageClass}}" alt="banner" style="max-height:50px;min-height:50px;max-width:50px;min-width:50px; {{primebanImageStyle}} " src="{{Imagesize}}">
+    </div>
+
+	<div class="primebanTexts prime-d-table-cell prime-align-middle {{primebanTextClass}} "  style=" {{primebanTextsStyle}}">	
+        <div class="primebanTitle prime-mb-1 {{primebanTitleClass}} " data-primeproductid='{{product.id}}' data-timerval1='{{  }}' style="color: rgb(34, 135, 201); font-weight: bold; font-size: 20px; line-height: 20px; {{primebanTitleStyle}}  ">
+            {% if lastbanstringtitle == '' %}
+                Want More Options?
+            {% else %}
+                {{lastbanstringtitle}}
+            {% endif %}
+        </div>
+        <div class="primebanSubTitle {{primebanSubTitleClass}} " data-primeproductid='{{product.id}}' data-timerval2='{{  }}' style="color: rgb(33, 37, 41); font-size: 15px; line-height: 15px; {{primebanSubTitleStyle}} ">
+            {% if lastbanstringsubtitle == '' %}
+                <span style="color: #2287c9;"><b>Click Here</b></span> to check out 'One Channel' by Grated Drains and choose from<b> 2 Channel Depths and 3 Premium grate styles.
+            {% else %}
+                {{lastbanstringsubtitle}}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}{% endif %}{% endif %}	{% endif %}
+	{% comment %} End Banner: 2 {% endcomment %}	
+	
+    </div>
+		
+	{% if HideAssets != '1' %}{% render 'primeban-js' %}{% endif %}
+		

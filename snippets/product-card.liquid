@@ -131,6 +131,9 @@
           image_quality: image_quality
         -%}
       {%- else -%}
+<!--prime group 1-->
+{% render 'primeb', product: product, hideAssets:'1', primebGroup:'1', primebOuterClass:'', primebOuterStyle:'position:absolute; top:10px; left:10px; z-index:3;', primebInnerStyle:'', primebInnerClass: 'prime-d-block prime-mb-1' %}
+
         <a href="{{ product_url }}" aria-label="{{ product.title | escape }}" class="media block relative{% if settings.blend_product_images %} image-blend{% endif %} js-prod-link" style="padding-top: {{ 1 | divided_by: image_ratio | times: 100 }}%;" tabindex="-1">
           {%- if product.featured_media -%}
             {%- capture attributes %}data-media-id="{{ product.featured_media.id }}"{% endcapture -%}
@@ -206,6 +209,7 @@
               {{- product.title | escape -}}
             </a>
           </p>
+{% render 'primeb', product: product, hideAssets:'1', primebGroup:'2', primebOuterClass:'prime-d-block', primebOuterStyle:'display: inline-block;', primebInnerStyle:'', primebInnerClass: 'prime-d-inline-block prime-mb-1 ' %}
 
           {%- if settings.card_show_subtitle and product.metafields.descriptors.subtitle != blank -%}
             <p class="card__subtitle text-sm text-current mb-1{% unless settings.show_dividers %} mt-1{% endunless %}">
@@ -466,6 +470,8 @@
       <div class="card__price theme-money">
         {%- render 'price-as-money', price: 1234 -%}
       </div>
+
     </div>
   </div>
+
 {%- endif -%}

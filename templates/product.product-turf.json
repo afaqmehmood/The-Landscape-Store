@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product-labels": {
+          "type": "product-labels",
+          "settings": {
+            "show_variant_icon": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_rating": true
+          }
+        },
+        "prime_product_badges_stickers_app_block_z6iqEe": {
+          "type": "shopify://apps/prime-product-badges-stickers/blocks/app-block/5164b33b-fe68-44bd-9923-c6cb9bab557f",
+          "settings": {
+            "group": "2",
+            "outerclass": "",
+            "outerstyle": "",
+            "innerclass": "",
+            "innerstyle": "",
+            "imageclass": "",
+            "imagestyle": "",
+            "textclass": "",
+            "textstyle": "",
+            "maxdisplay": ""
+          }
+        },
+        "inventory_status_9YmNdx": {
+          "type": "inventory-status",
+          "settings": {
+            "show_indicator_bar": false,
+            "show_urgency_message": true,
+            "text_very_low": "",
+            "text_low": "",
+            "text_normal": "",
+            "text_no_stock": "<p></p><p>{{ product.metafields.custom.restock_eta.value }}</p>",
+            "text_no_stock_backordered": "<p>{{ product.metafields.custom.special_order_dispatch_delay.value }}<br/>{{ product.metafields.custom.supplier_lead_time.value }}</p>"
+          }
+        },
+        "icon_with_text_pCe8pL": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "icon": "ruler",
+            "text": "<p>{{ product.metafields.custom.pdp_highlight_re_size.value }}</p>",
+            "icon_size": 24
+          }
+        },
+        "reviews_io_reviewsio_rating_output_77z9zJ": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider-0": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "spacing": "mt-8 mb-8"
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "dropdown",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": false,
+            "show_backorder_text": false,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "icon_with_text_8teY6t": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "icon": "ruler",
+            "text": "<p>Short text description</p>",
+            "icon_size": 24
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "selleasy_lb_upsell_addon_block_NV9qew": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-addon-block/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        },
+        "breadcrums_cra_6c8Ggt": {
+          "type": "breadcrums_cra",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product-labels",
+        "title",
+        "price",
+        "prime_product_badges_stickers_app_block_z6iqEe",
+        "inventory_status_9YmNdx",
+        "icon_with_text_pCe8pL",
+        "reviews_io_reviewsio_rating_output_77z9zJ",
+        "divider-0",
+        "variant-picker",
+        "icon_with_text_8teY6t",
+        "buy-buttons",
+        "selleasy_lb_upsell_addon_block_NV9qew",
+        "breadcrums_cra_6c8Ggt"
+      ],
+      "settings": {
+        "stick_on_scroll": true,
+        "select_first_variant": true,
+        "sticky_atc_panel": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "media_layout": "slider",
+        "media_size": "default",
+        "media_ratio": "1.33",
+        "media_crop": "none",
+        "enable_video_looping": false,
+        "enable_zoom": true,
+        "zoom_mode": "hover",
+        "enable_lightbox_mobile": false,
+        "hover_zoom": "large",
+        "stacked_scroll": "always",
+        "underline_active": true,
+        "media_arrows": "desktop",
+        "show_slide_count": true,
+        "media_thumbs": "desktop",
+        "lightbox_thumbnails": true,
+        "thumb_ratio": "1",
+        "thumb_crop": "none",
+        "border_color": "#eeeeee",
+        "bg_color": "#f4f4f4",
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "tabs": {
+          "type": "tabs",
+          "settings": {
+            "style": "tabs",
+            "open_first": true,
+            "show_description": true,
+            "show_reviews": false,
+            "custom_reviews": "",
+            "show_specification": false,
+            "spec_metafields": "",
+            "spec_right_align": false,
+            "spec_show_empty_metafields": true,
+            "spec_empty_field_text": "-",
+            "tab_1_title": "",
+            "tab_1_text": "",
+            "tab_1_page": "",
+            "tab_2_title": "",
+            "tab_2_text": "",
+            "tab_2_page": "",
+            "tab_3_title": "",
+            "tab_3_text": "",
+            "tab_3_page": ""
+          }
+        },
+        "payment-methods": {
+          "type": "payment-methods",
+          "settings": {
+            "title": "Payment & Security",
+            "title1": "Payment methods",
+            "show_payment_icons": true,
+            "text1": "<p>Your payment information is processed securely. We do not store credit card details nor have access to your credit card information.</p>",
+            "title2": "",
+            "text2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tabs",
+        "payment-methods"
+      ],
+      "settings": {}
+    },
+    "1746422163e883d4d1": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_polaris_MEM9TE": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product_review,questions",
+            "per_page": 8,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#000000",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#d9d9d9",
+            "heading_text_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#000000",
+            "badge_icon_color": "#000000",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_sentiment_analysis": false,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers_and_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_polaris_MEM9TE"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_align": "text-start",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 8
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "1746422163e883d4d1",
+    "recommendations"
+  ]
+}

@@ -27,11 +27,33 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_tax_and_shipping": false
+            "show_tax_and_shipping": false,
+            "enable_rating": true
+          }
+        },
+        "inventory_status_9YmNdx": {
+          "type": "inventory-status",
+          "settings": {
+            "show_indicator_bar": false,
+            "show_urgency_message": true,
+            "text_very_low": "",
+            "text_low": "",
+            "text_normal": "",
+            "text_no_stock": "<p></p><p>{{ product.metafields.custom.restock_eta.value }}</p>",
+            "text_no_stock_backordered": "<p>{{ product.metafields.custom.special_order_dispatch_delay.value }}<br/>{{ product.metafields.custom.supplier_lead_time.value }}</p>"
+          }
+        },
+        "icon_with_text_pCe8pL": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "ruler",
+            "text": "<p>{{ product.metafields.custom.pdp_highlight_re_size.value }}</p>",
+            "icon_size": 24
           }
         },
         "reviews_io_reviewsio_rating_output_77z9zJ": {
           "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
           "settings": {}
         },
         "divider-0": {
@@ -45,20 +67,22 @@
         "variant-picker": {
           "type": "variant-picker",
           "settings": {
-            "selector_style": "buttons",
+            "selector_style": "dropdown",
             "enable_dynamic_availability": true,
             "dynamic_availability_downwards": false,
-            "show_backorder_text": true,
+            "show_backorder_text": false,
             "enable_size_chart": false,
             "size_chart_variant": "Size",
             "size_chart_page": ""
           }
         },
-        "divider-1": {
-          "type": "divider",
+        "icon_with_text_8teY6t": {
+          "type": "icon-with-text",
+          "disabled": true,
           "settings": {
-            "show_line": true,
-            "spacing": "mt-8 mb-8"
+            "icon": "ruler",
+            "text": "<p>Short text description</p>",
+            "icon_size": 24
           }
         },
         "buy-buttons": {
@@ -70,24 +94,12 @@
             "show_gift_card_recipient": false
           }
         },
-        "collapsible-content-1": {
-          "type": "collapsible-content",
+        "vendor_sku_Nth4gL": {
+          "type": "vendor-sku",
           "settings": {
-            "heading": "Care information",
-            "icon": "heart",
-            "text": "<p>Display general product information or specific product information using metafields.</p>",
-            "page": "",
-            "open": false
-          }
-        },
-        "collapsible-content-2": {
-          "type": "collapsible-content",
-          "settings": {
-            "heading": "Delivery and Shipping",
-            "icon": "truck",
-            "text": "<p>Add some general information about your delivery and shipping policies.</p>",
-            "page": "",
-            "open": false
+            "show_vendor": true,
+            "show_sku": true,
+            "show_barcode": false
           }
         },
         "share": {
@@ -108,6 +120,10 @@
             "text_color": "#1a66d2"
           }
         },
+        "selleasy_lb_upsell_addon_block_ztc7xz": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-addon-block/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        },
         "breadcrums_cra_6c8Ggt": {
           "type": "breadcrums_cra",
           "settings": {}
@@ -117,15 +133,17 @@
         "product-labels",
         "title",
         "price",
+        "inventory_status_9YmNdx",
+        "icon_with_text_pCe8pL",
         "reviews_io_reviewsio_rating_output_77z9zJ",
         "divider-0",
         "variant-picker",
-        "divider-1",
+        "icon_with_text_8teY6t",
         "buy-buttons",
-        "collapsible-content-1",
-        "collapsible-content-2",
+        "vendor_sku_Nth4gL",
         "share",
         "message-3",
+        "selleasy_lb_upsell_addon_block_ztc7xz",
         "breadcrums_cra_6c8Ggt"
       ],
       "settings": {
@@ -136,7 +154,7 @@
         "sticky_atc_mobile": true,
         "media_layout": "slider",
         "media_size": "default",
-        "media_ratio": "1",
+        "media_ratio": "1.33",
         "media_crop": "none",
         "enable_video_looping": false,
         "enable_zoom": true,
@@ -171,7 +189,7 @@
         "tabs": {
           "type": "tabs",
           "settings": {
-            "style": "collapsible",
+            "style": "tabs",
             "open_first": true,
             "show_description": true,
             "show_reviews": false,
@@ -181,8 +199,8 @@
             "spec_right_align": false,
             "spec_show_empty_metafields": true,
             "spec_empty_field_text": "-",
-            "tab_1_title": "",
-            "tab_1_text": "",
+            "tab_1_title": "Delivery & Shipping",
+            "tab_1_text": "<p><strong>Warehouse processing Time: </strong>All orders placed before <strong>1pm </strong>leave our warehouse that same day.</p><p><strong>Shipping Costs: </strong>To see shipping costs, simply add the product(s) to your cart and head to checkout. Express and regular shipping options will be available at checkout.</p>",
             "tab_1_page": "",
             "tab_2_title": "",
             "tab_2_text": "",
@@ -211,6 +229,47 @@
       ],
       "settings": {}
     },
+    "1746409371cb0599e1": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_polaris_7Gw48k": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-polaris/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product_review,questions",
+            "per_page": 8,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#000000",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#d9d9d9",
+            "heading_text_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#000000",
+            "badge_icon_color": "#000000",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_sentiment_analysis": false,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers_and_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_polaris_7Gw48k"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -226,6 +285,7 @@
   "order": [
     "main",
     "details",
+    "1746409371cb0599e1",
     "recommendations"
   ]
 }

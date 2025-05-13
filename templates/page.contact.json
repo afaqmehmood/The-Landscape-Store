@@ -11,44 +11,61 @@
   "sections": {
     "main": {
       "type": "main-contact",
-      "disabled": true,
       "settings": {
-        "show_contact_title": false
+        "show_contact_title": true,
+        "heading_align": "text-start"
       }
     },
-    "image-banner": {
-      "type": "image-banner",
+    "icons_with_text_7nJgEd": {
+      "type": "icons-with-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "item_mrKfhD": {
+          "type": "item",
           "settings": {
-            "heading": "Contact Us",
-            "heading_size": "h1",
-            "heading_h1": true
+            "icon": "phone",
+            "heading": "(02) 9161 3939",
+            "text": "<p>Call our team today</p>",
+            "link": ""
           }
         },
-        "text": {
-          "type": "text",
+        "item_XDG9nK": {
+          "type": "item",
           "settings": {
-            "text": "<p>Please visit our help pages for answers to some of the most commonly asked questions.</p>",
-            "enlarge_text": true
+            "icon": "map_pin",
+            "heading": "Visit our warehouse",
+            "text": "<p>47 Carlotta St, Artarmon, NSW, 2064</p>",
+            "link": ""
+          }
+        },
+        "item_QGmTjX": {
+          "type": "item",
+          "settings": {
+            "icon": "email",
+            "heading": "Email Us!",
+            "text": "<p>sales@thelandscapestore.com.au</p>",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "item_mrKfhD",
+        "item_XDG9nK",
+        "item_QGmTjX"
       ],
+      "name": "Icons with text",
       "settings": {
-        "height_mode": "fixed",
-        "fixed_height_desktop": 560,
-        "fixed_height_mobile": 440,
-        "overlay_position": "justify-start items-center",
-        "overlay_text_align": "text-start",
-        "mob_center_text": true,
-        "mobile_stacked": false,
-        "color_scheme": "white",
-        "full_width": true
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 48,
+        "title_type_scale": "medium",
+        "text_type_scale": "medium",
+        "icon_position": "beside",
+        "mobile_stack": false,
+        "section_height": "medium",
+        "color_scheme": "1",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
       }
     },
     "form": {
@@ -72,6 +89,7 @@
           "type": "dropdown",
           "settings": {
             "title": "How can we help?",
+            "options": "Regarding an existing order.\nTechnical Enquiry\nWarranty\nSales Enquiry\nGeneral Enquiry",
             "half_width": false
           }
         },
@@ -90,7 +108,7 @@
         "contact-body-5"
       ],
       "settings": {
-        "heading": "Drop us an email",
+        "heading": "Send us a email",
         "heading_align": "text-center",
         "image_position": "top",
         "color_scheme": "1",
@@ -111,6 +129,7 @@
         "newsletter-text-1": {
           "type": "text",
           "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
             "enlarge_text": false
           }
         },
@@ -124,17 +143,21 @@
         "newsletter-text-1",
         "newsletter-form-2"
       ],
+      "disabled": true,
       "settings": {
         "overlay_position": "justify-center",
         "text_align": "text-center",
         "color_scheme": "default",
-        "full_width": true
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
       }
     }
   },
   "order": [
     "main",
-    "image-banner",
+    "icons_with_text_7nJgEd",
     "form",
     "newsletter"
   ]

@@ -140,7 +140,8 @@
             </div>
 
           {%- when 'icon-with-text' -%}
-            <div class="product-info__block product-info__block--sm flex items-center gap-3">
+          {% unless block.settings.text == blank %}
+            <div class="product-info__block product-info__icon-with-text mt-2 product-info__block--sm flex items-center gap-3">
               {% render 'icon',
                       icon: block.settings.icon,
                       width: block.settings.icon_size,
@@ -148,6 +149,7 @@
                     %}
               <div class="rte">{{ block.settings.text }}</div>
             </div>
+            {% endunless %}
           {%- when 'breadcrums_cra' -%}
             <!-- {% style %}
               @media screen and (max-width:750px){
@@ -220,7 +222,7 @@
                 {% endif %}
               </h1>
             </div>
-
+{% render 'primeb', product: product, hideAssets:'1', primebGroup:'1', primebOuterClass:'prime-d-block', primebOuterStyle:'display: inline-block;', primebInnerStyle:'', primebInnerClass: 'prime-d-inline-block prime-mb-1 ' %}
           {%- when 'weight' -%}
             <div class="product-info__block product-info__block--sm product-info__weight" {{ block.shopify_attributes }}{% unless current_variant.weight > 0 %} hidden{% endunless %}>
               {% if current_variant.weight > 0 %}
@@ -252,7 +254,8 @@
                     {%- endif -%}
                 {%- endif -%}
               </div>
-
+{% render 'primeban', product: product, primebanGroup:'1', primebanOuterClass:'prime-mb-2 prime-mt-2 prime-text-left', primebanOuterStyle:'', primebanInnerStyle:'', primebanInnerClass: 'prime-d-block prime-mb-1' %}
+{% render 'primeban', product: product, primebanGroup:'2', primebanOuterClass:'prime-mb-2 prime-mt-2 prime-text-left', primebanOuterStyle:'', primebanInnerStyle:'', primebanInnerClass: 'prime-d-block prime-mb-1' %}
               {%- if block.settings.show_tax_and_shipping -%}
                 {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product-policies text-sm rte">
@@ -267,7 +270,7 @@
               {%- endif -%}
 
               {%- assign instalments_form_id = 'instalments-form-' | append: section.id -%}
-              {%- form 'product', product, class: 'js-instalments-form  text-sm mt-2', id: instalments_form_id -%}
+              {%- form 'product', product, class: 'js-instalments-form  text-sm', id: instalments_form_id -%}
                 <input type="hidden" name="id" value="{{ current_variant.id }}">
                 {{ form | payment_terms }}
               {%- endform -%}
@@ -728,7 +731,7 @@
   <script src="{{ 'sticky-atc-panel.js' | asset_url }}" defer="defer"></script>
 
   <sticky-atc-panel class="sticky-atc-panel sticky-atc-panel--out fixed bottom-0 {{ section.settings.sticky_atc_position }} invisible{% if section.settings.sticky_atc_mobile == false %} hidden md:block{% endif %}">
-    <div class="card card--row card--related card--sticky-atc relative flex items-center page-width">
+    <div class="card card--row w-full card--sticky-atc relative flex items-center page-width">
       {%- if featured_media -%}
         <div class="card__media{% if settings.blend_product_images %} image-blend{% endif %}">
           {%- liquid
@@ -748,7 +751,8 @@
 
         {%- render 'price', product: product -%}
       </div>
-
+{% render 'primeban', product: product, primebanGroup:'1', primebanOuterClass:'prime-mb-2 prime-mt-2 prime-text-left', primebanOuterStyle:'', primebanInnerStyle:'', primebanInnerClass: 'prime-d-block prime-mb-1' %}
+{% render 'primeban', product: product, primebanGroup:'2', primebanOuterClass:'prime-mb-2 prime-mt-2 prime-text-left', primebanOuterStyle:'', primebanInnerStyle:'', primebanInnerClass: 'prime-d-block prime-mb-1' %}
       <div class="card__buttons">
         {%- liquid
           if has_variant_picker

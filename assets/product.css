@@ -198,6 +198,10 @@
   margin-top: 3rem;
 }
 
+.product-info__block.product-options {
+	margin: 1.5rem 0;
+}
+
 .product-info__block.custom-option {
   margin-bottom: 2px;
 }
@@ -223,7 +227,8 @@
 }
 
 .product-info__block--sm {
-  margin: var(--product-details-block-margin-sm) 0;
+  /* margin: var(--product-details-block-margin-sm) 0; */
+  margin: 0.5rem 0;
 }
 
 .product-info__block--md {
@@ -233,7 +238,14 @@
 .product-details__block {
   margin: var(--product-details-block-margin) 0;
 }
+.product-info__title {
+  margin-top: 0;
+}
 
+.product-info__title .product-title{
+  margin-bottom: 0;
+  line-height: 1;
+}
 .product-vendor-sku + .product-info__title {
   margin-top: -4px;
 }
@@ -253,6 +265,17 @@
 
 .product-info__price .product-info__rating {
   margin-top: 0;
+}
+
+.product-info__price .product-info__rating .rating__stars {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.product-info__price .product-info__rating .rating__count {
+  font-size: 12px;
+  margin-inline: 0.3rem;
+  margin-bottom: -0.2rem;
 }
 
 .product-info__add-to-cart quantity-input {

@@ -2319,6 +2319,8 @@ td {
   flex: 1 1 auto;
   flex-wrap: wrap;
   line-height: 1em;
+  width: 100%;
+  overflow: clip
 }
 
 .breadcrumbs-list__link {
@@ -3087,9 +3089,9 @@ details-disclosure + details-disclosure .disclosure--row {
     left: 0;
     width: 100vw;
     height: calc(var(--viewport-height) - var(--header-end, 100px));
-    padding-right: var(--gutter);
+    /* padding-right: var(--gutter); */
     padding-bottom: 60px;
-    padding-left: var(--gutter);
+    /* padding-left: var(--gutter); */
     overflow-y: scroll;
     background-color: rgb(var(--nav-child-bg-color));
     color: rgb(var(--nav-child-text-color));
@@ -3098,6 +3100,9 @@ details-disclosure + details-disclosure .disclosure--row {
 .main-menu__disclosure > .main-menu__content {
     transition: opacity 0.3s, visibility 0.3s;
     opacity: 0;
+  }
+  .main-menu__content nav {
+    padding-inline: var(--gutter)
   }
   .main-menu__disclosure.is-open > .main-menu__content {
     opacity: 1;
@@ -5559,4 +5564,15 @@ body > .os-scrollbar {
   .xl\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
+}
+.card_url_absolute {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 9;
 }

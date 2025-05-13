@@ -124,7 +124,7 @@
           assign image_url = media.preview_image | image_url: width: zoom_level
         endif
       -%}
-
+{% render 'primeb', product: product, hideAssets:'1', primebGroup:'2', primebOuterClass:'', primebOuterStyle:'position:absolute; top:10px; right:10px; z-index:3;', primebInnerStyle:'', primebInnerClass: 'prime-d-block prime-mb-1' %}
       <a href="{{ image_url }}" class="media--cover media--zoom media--zoom-not-loaded inline-flex overflow-hidden absolute top-0 left-0 w-full h-full js-zoom-link" target="_blank">
     {%- else -%}
         <div class="media--cover overflow-hidden absolute top-0 left-0 w-full h-full">

@@ -34,6 +34,7 @@
 -%}
 
 <div class="card card--row card--related {{ classes }} relative flex"{% if id %} id="{{ id }}"{% endif %}>
+{% render 'primeb', product: product, hideAssets:'1', primebGroup:'2', primebOuterClass:'', primebOuterStyle:'position:absolute; top:10px; left:10px; z-index:3;', primebInnerStyle:'', primebInnerClass: 'prime-d-block prime-mb-1' %}
   <div class="card__media">
     {% if settings.blend_product_images %}<div class="image-blend">{% endif %}
       {%- if product.featured_media -%}
