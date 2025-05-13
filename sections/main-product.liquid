@@ -236,7 +236,7 @@
 
           {%- when 'price' -%}
             <div class="product-info__block product-info__block--sm product-price" {{ block.shopify_attributes }}>
-              <div class="product-info__price flex items-center justify-between">
+              <div class="product-info__price flex items-center items-center justify-between">
                 {% render 'price', product: product, use_variant: true %}
               
                 {%- if block.settings.enable_rating -%}
